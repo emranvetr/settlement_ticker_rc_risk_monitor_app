@@ -156,7 +156,7 @@ def fetch_products(isins):
     return df
 
 
-if st.button("Run analysis"):
+if st.button("Run Risk Monitor"):
     isins = [isin.strip().upper() for isin in isin_input.split(",") if isin.strip()]
 
     if not isins:
