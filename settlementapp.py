@@ -6,12 +6,11 @@ from io import BytesIO
 
 st.set_page_config(page_title="RC Risk Monitor", layout="wide")
 
-st.title("RC Risk Monitor")
-st.write("Enter one or more ISIN codes separated by commas.")
+st.title("RC Risk Monitor (settlement-ticker version)")
 
 isin_input = st.text_area(
-    "ISIN codes",
-    placeholder="CH1234567890, XS1234567890"
+    "Enter ISIN codes separated by commas",
+    placeholder="Example: CH1234567890, CH0987654321"
 )
 
 def create_excel(df):
